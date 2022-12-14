@@ -437,11 +437,11 @@ $row_comment = $result_comment->fetchAll();
                 <input class="pd-price none" id="pd-price5" type="text" name="sp" value="<?= number_format($rowPD_D['p_price5'], 2)  ?> " readonly> -->
 
 
-                <p class="pd-price" id="pd-price1">฿<?= number_format($rowPD_D['p_price1'], 2) ?> <span class="vat">(ราคานี้ยังไม่รวมภาษีมูลค่าเพิ่ม)</span></p>
-                <p class="pd-price none" id="pd-price2">฿<?= number_format($rowPD_D['p_price2'], 2)  ?> <span class="vat"> (ราคานี้ยังไม่รวมภาษีมูลค่าเพิ่ม)</span></p>
-                <p class="pd-price none" id="pd-price3">฿<?= number_format($rowPD_D['p_price3'], 2)  ?> <span class="vat"> (ราคานี้ยังไม่รวมภาษีมูลค่าเพิ่ม)</span></p>
-                <p class="pd-price none" id="pd-price4">฿<?= number_format($rowPD_D['p_price4'], 2)  ?> <span class="vat">(ราคานี้ยังไม่รวมภาษีมูลค่าเพิ่ม)</span></p>
-                <p class="pd-price none" id="pd-price5">฿<?= number_format($rowPD_D['p_price5'], 2)  ?> <span class="vat"> (ราคานี้ยังไม่รวมภาษีมูลค่าเพิ่ม)</span></p>
+                <p class="pd-price" id="pd-price1">฿<?= number_format($rowPD_D['p_price1'], 2) ?> / <?= $rowPD_D["p_unit"] ?> <span class="vat">(ราคานี้ยังไม่รวมภาษีมูลค่าเพิ่ม)</span></p>
+                <p class="pd-price none" id="pd-price2">฿<?= number_format($rowPD_D['p_price2'], 2)  ?> / <?= $rowPD_D["p_unit"] ?> <span class="vat"> (ราคานี้ยังไม่รวมภาษีมูลค่าเพิ่ม)</span></p>
+                <p class="pd-price none" id="pd-price3">฿<?= number_format($rowPD_D['p_price3'], 2)  ?> / <?= $rowPD_D["p_unit"] ?> <span class="vat"> (ราคานี้ยังไม่รวมภาษีมูลค่าเพิ่ม)</span></p>
+                <p class="pd-price none" id="pd-price4">฿<?= number_format($rowPD_D['p_price4'], 2)  ?> / <?= $rowPD_D["p_unit"] ?> <span class="vat">(ราคานี้ยังไม่รวมภาษีมูลค่าเพิ่ม)</span></p>
+                <p class="pd-price none" id="pd-price5">฿<?= number_format($rowPD_D['p_price5'], 2)  ?> / <?= $rowPD_D["p_unit"] ?> <span class="vat"> (ราคานี้ยังไม่รวมภาษีมูลค่าเพิ่ม)</span></p>
                 <div class="descript">
                     <p class="pd-title">คุณสมบัติ</p>
                 
@@ -502,14 +502,14 @@ $row_comment = $result_comment->fetchAll();
                     <button type="submit" name="buy-now" class="btn" id="btn-buy">ซื้อทันที</button>
 
                 </div>
-                <div class="head-rate-dealer">
+                <!-- <div class="head-rate-dealer">
                     <p class="title-rate-dealer">พิเศษสำหรับตัวแทนจำหน่าย <span class="txt-rate-dealer">(ยิ่งระดับตัวแทนสูงจะได้รับราคาพิเศษในการสั่งซื้อ)</span></p>
                     <p class="txt-rate-dealer">สั่งซื้อ 50 ชิ้น ขึ้นไปจะได้ระดับตัวแทนเป็น member</p>
                     <p class="txt-rate-dealer">สั่งซื้อ 100 ชิ้น ขึ้นไปจะได้ระดับตัวแทนเป็น member</p>
                     <p class="txt-rate-dealer">สั่งซื้อ 300 ชิ้น ขึ้นไปจะได้ระดับตัวแทนเป็น VIP</p>
                     <p class="txt-rate-dealer">สั่งซื้อ 500 ชิ้น ขึ้นไปจะได้ระดับตัวแทนเป็น SUPER VIP</p>
                     <p class="txt-rate-dealer">สั่งซื้อ 1000 ชิ้น ขึ้นไปจะได้ระดับตัวแทนเป็น Dealer</p>
-                </div>
+                </div> -->
             </form>
         </div>
     </div>

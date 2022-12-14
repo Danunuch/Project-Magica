@@ -210,7 +210,7 @@ $p_type = $stmtType->fetchAll();
                         <div class="card-body">
                             <p class="card-title"><?= $result['p_name'] ?></p>
                             <p class="card-text">฿<?= number_format($result['p_price'], 2) ?></p>
-                            <a href="product_detail.php?p_id=<?= $result['p_id']; ?>" class="btn " id="btn-dp" style="margin: 0 auto;">รายละเอียด</a>
+                            <a href="product_detail?p_id=<?= $result['p_id']; ?>" class="btn " id="btn-dp" style="margin: 0 auto;">รายละเอียด</a>
                         </div>
                     </div>
                 </div>

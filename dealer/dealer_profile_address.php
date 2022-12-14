@@ -118,7 +118,7 @@ if (!isset($_SESSION['dealer_login'])) {
         </div>
     </div>
     <div class="footer" style="margin-top: 20px;">
-    <?php include('sfooter.php') ?>
+    <?php include('footer.php') ?>
     </div>
 </body>
 <script src="/magica/action.js"></script>

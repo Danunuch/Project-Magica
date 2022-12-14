@@ -1,3 +1,5 @@
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <?php
 if (!isset($_SESSION)) {
     session_start();
@@ -29,8 +31,9 @@ if (isset($_POST['update'])) {
     $sql->execute();
 
     if ($sql) {
-        // echo "<script>alert('แก้ไขข้อมูลเสร็จสิ้น')</script>";
-        header("refresh:0.0000000001; url=profile");
+      //   echo "<script>alert('แก้ไขข้อมูลเสร็จสิ้น')</script>";
+        echo "<meta http-equiv='Refresh' content='0.001; url=profile'>";
+        // header("refresh:0.0000000001; url=profile");
     }
 }
 

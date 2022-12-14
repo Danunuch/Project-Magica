@@ -5,7 +5,7 @@
 <?php
 include('menu_l.php');
 require_once('../config/db.php');
-
+error_reporting(0);
 if (isset($_POST['btn_insert'])) {
     $p_name = $_POST['name'];
     $p_detail = $_POST['detail'];
@@ -33,17 +33,23 @@ if (isset($_POST['btn_insert'])) {
 
 
     if (empty($p_name)) {
-        $errorMsg = "กรุณากรอกชื่อสินค้า";
+        // $errorMsg = "กรุณากรอกชื่อสินค้า";
+        echo '<script>alert("กรุณากรอกชื่อสินค้า")</script>';
     } else if (empty($p_detail)) {
-        $errorMsg = "กรุณากรอกรายละเอียดสินค้า";
+        // $errorMsg = "กรุณากรอกรายละเอียดสินค้า";
+        echo '<script>alert("กรุณากรอกรายละเอียดสินค้า")</script>';
     } else if (empty($p_price)) {
-        $errorMsg = "กรุณากรอกราคาสินค้า";
+        // $errorMsg = "กรุณากรอกราคาสินค้า";
+        echo '<script>alert("กรุณากรอกราคาสินค้า")</script>';
     } else if (empty($p_amount)) {
-        $errorMsg = "กรุณากรอกจำนวนสินค้า";
+        // $errorMsg = "กรุณากรอกจำนวนสินค้า";
+        echo '<script>alert("กรุณากรอกจำนวนสินค้า")</script>';
     } else if (empty($p_unit)) {
-        $errorMsg = "กรุณากรอกหน่วยสินค้า";
+        // $errorMsg = "กรุณากรอกหน่วยสินค้า";
+        echo '<script>alert("กรุณากรอกหน่วยสินค้า")</script>';
     } else if (empty($img1)) {
-        $errorMsg = "กรุณาอัปโหลดรูปสินค้า";
+       // $errorMsg = "กรุณาอัปโหลดรูปสินค้า";
+        echo '<script>alert("กรุณาอัปโหลดรูปสินค้า")</script>';
     } else {
         try {
             if (in_array($fileActExt1, $allow) && in_array($fileActExt2, $allow) && in_array($fileActExt3, $allow)) {

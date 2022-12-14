@@ -432,11 +432,11 @@ $row_comment = $result_comment->fetchAll();
                 <input class="pd-price none" id="pd-price5" type="text" name="sp" value="<?= number_format($rowPD_D['p_price5'], 2)  ?> " readonly> -->
 
 
-                <p class="pd-price" id="pd-price1">฿<?= number_format($rowPD_D['p_price1'], 2) ?> <span class="vat">(ราคานี้ยังไม่รวมภาษีมูลค่าเพิ่ม)</span></p>
-                <p class="pd-price none" id="pd-price2">฿<?= number_format($rowPD_D['p_price2'], 2)  ?> <span class="vat"> (ราคานี้ยังไม่รวมภาษีมูลค่าเพิ่ม)</span></p>
-                <p class="pd-price none" id="pd-price3">฿<?= number_format($rowPD_D['p_price3'], 2)  ?> <span class="vat"> (ราคานี้ยังไม่รวมภาษีมูลค่าเพิ่ม)</span></p>
-                <p class="pd-price none" id="pd-price4">฿<?= number_format($rowPD_D['p_price4'], 2)  ?> <span class="vat">(ราคานี้ยังไม่รวมภาษีมูลค่าเพิ่ม)</span></p>
-                <p class="pd-price none" id="pd-price5">฿<?= number_format($rowPD_D['p_price5'], 2)  ?> <span class="vat"> (ราคานี้ยังไม่รวมภาษีมูลค่าเพิ่ม)</span></p>
+                <p class="pd-price" id="pd-price1">฿<?= number_format($rowPD_D['p_price1'], 2) ?> / <?= $rowPD_D["p_unit"] ?> <span class="vat">(ราคานี้ยังไม่รวมภาษีมูลค่าเพิ่ม)</span></p>
+                <p class="pd-price none" id="pd-price2">฿<?= number_format($rowPD_D['p_price2'], 2)  ?> / <?= $rowPD_D["p_unit"] ?> <span class="vat"> (ราคานี้ยังไม่รวมภาษีมูลค่าเพิ่ม)</span></p>
+                <p class="pd-price none" id="pd-price3">฿<?= number_format($rowPD_D['p_price3'], 2)  ?> / <?= $rowPD_D["p_unit"] ?> <span class="vat"> (ราคานี้ยังไม่รวมภาษีมูลค่าเพิ่ม)</span></p>
+                <p class="pd-price none" id="pd-price4">฿<?= number_format($rowPD_D['p_price4'], 2)  ?> / <?= $rowPD_D["p_unit"] ?> <span class="vat">(ราคานี้ยังไม่รวมภาษีมูลค่าเพิ่ม)</span></p>
+                <p class="pd-price none" id="pd-price5">฿<?= number_format($rowPD_D['p_price5'], 2)  ?> / <?= $rowPD_D["p_unit"] ?> <span class="vat"> (ราคานี้ยังไม่รวมภาษีมูลค่าเพิ่ม)</span></p>
                 <div class="descript">
                     <p class="pd-title">สรรพคุณ</p>
                   

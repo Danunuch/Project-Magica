@@ -54,7 +54,6 @@ if (isset($_POST['add-to-card'])) {
                     echo "<script>
                     $(document).ready(function() {
                         Swal.fire({
-                            position: 'top-end',
                             text: 'มีสินค้านี้ในรถเข็นแล้ว',
                             icon: 'warning',
                             timer: 12000,
@@ -84,7 +83,6 @@ if (isset($_POST['add-to-card'])) {
                     echo "<script>
                     $(document).ready(function() {
                         Swal.fire({
-                            position: 'top-end',
                             text: 'เพิ่มสินค้าในรถเข็นแล้ว',
                             icon: 'success',
                             timer: 12000,
@@ -113,7 +111,6 @@ if (isset($_POST['add-to-card'])) {
                 echo "<script>
                 $(document).ready(function() {
                     Swal.fire({
-                        position: 'top-end',
                         text: 'เพิ่มสินค้าในรถเข็นแล้ว',
                         icon: 'success',
                         timer: 12000,
@@ -409,7 +406,7 @@ $row_comment = $result_comment->fetchAll();
         </div>
         <div class="text-pdd">
             <p class="pd-name"><?= $rowPD_D['p_name'] ?></p>
-            <p class="pd-price">฿<?= number_format($rowPD_D['p_price'], 2)  ?> <span class="vat">(ราคานี้ยังไม่รวมภาษีมูลค่าเพิ่ม)</span></p>
+            <p class="pd-price">฿<?= number_format($rowPD_D['p_price'], 2)  ?>  / <?= $rowPD_D["p_unit"] ?> <span class="vat">(ราคานี้ยังไม่รวมภาษีมูลค่าเพิ่ม)</span></p>
             <div class="descript">
                 <p class="pd-title">สรรพคุณ</p>
 

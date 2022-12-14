@@ -330,11 +330,9 @@ $row_comment = $result_comment->fetchAll();
             <p class="pd-price">฿<?= number_format($rowPD_D['p_price'], 2)  ?> <span class="vat">(ราคานี้ยังไม่รวมภาษีมูลค่าเพิ่ม)</span></p>
             <div class="descript">
                 <p class="pd-title">คุณสมบัติ</p>
-                <ul>
-                    <li>
+            
                         <p class="pd-descript"><?= $rowPD_D['p_detail'] ?></p>
-                    </li>
-                </ul>
+                  
             </div>
             <form method="POST">
                 <div class="pur-bill ">
@@ -423,7 +421,7 @@ $row_comment = $result_comment->fetchAll();
                             <div class="card-body">
                                 <p class="card-title"><?= $rowRT['p_name'] ?></p>
                                 <p class="card-text">฿<?= number_format($rowRT['p_price'], 2) ?></p>
-                                <a href="product_detail.php?p_id=<?= $rowRT['p_id']; ?>" class="btn " id="btn-dp" style="margin: 0 auto;">รายละเอียด</a>
+                                <a href="product_detail?p_id=<?= $rowRT['p_id']; ?>" class="btn " id="btn-dp" style="margin: 0 auto;">รายละเอียด</a>
                             </div>
                         </div>
                     </div>
