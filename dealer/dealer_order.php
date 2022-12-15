@@ -654,7 +654,7 @@ if (isset($_POST['submit_order'])) {
                             <img src="../asset/img/icon-summary-order.png" class="icon-summary-order" alt=""><span>ยอดสั่งซื้อทั้งหมด</span>
                         </div>
                         <div class="txt-content-summary1">
-                            <span>ยอดรวมสินค้า:</span>
+                            <span>ยอดรวมสินค้า :</span>
                             <span>
                                 <?php
                                 $totalPrice = 0;
@@ -668,14 +668,14 @@ if (isset($_POST['submit_order'])) {
                             </span>
                         </div>
                         <div class="txt-content-summary1">
-                            <span>รวมค่าจัดส่ง:</span>
+                            <span>รวมค่าจัดส่ง :</span>
                             <span id="sum-shipping-cost">฿45.00</span>
                         </div>
                         <div class="txt-content-summary1">
-                            <span>ภาษีมูลค่าเพิ่ม:</span> <span>7%</span>
+                            <span>ภาษีมูลค่าเพิ่ม 7% :</span> <span><?php echo '฿'. number_format($totalPrice * 0.07,2) ?></span>
                         </div>
                         <div class="txt-content-summary1">
-                            <span>การชำระเงินทั้งหมด:</span>
+                            <span>การชำระเงินทั้งหมด :</span>
                             <span>
                                 <?php
                                 $ship_cost = 45;

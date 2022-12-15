@@ -27,7 +27,7 @@ $query = $sql_provinces->fetchAll();
 <!-- /////  Content //////-->
 <div class="bg-text-regis">
 
-    <i class="bi bi-person-circle " style="font-size: 45px; margin-left: 35px; margin-right: 20px;"></i> <span style="font-size: 24px;">ลงทะเบียนสำหรับตัวแทนจำหน่าย</span>
+    <i class="bi bi-person-circle " style="font-size: 45px; margin-left: 35px; margin-right: 20px;"></i> <span id="regis-der">ลงทะเบียนสำหรับตัวแทนจำหน่าย</span>
 </div>
 
 <p id="text-title-signin">

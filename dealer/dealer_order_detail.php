@@ -307,7 +307,7 @@ if (isset($_GET["order_id"])) {
                                 <tr>
                                     <td style="padding: 0px;"><?= $row_Order_detail["p_name"] ?></td>
                                     <td style="padding: 0px;" class="pos-txt-body-detail-order"><?= $row_Order_detail["qty"] ?></td>
-                                    <td style="padding: 0px;" class="pos-txt-body-detail-order">฿<?= number_format($row_Order_detail["p_price"], 2) ?></td>
+                                    <td width="5%" style="padding: 0px;" class="pos-txt-body-detail-order">฿<?= number_format($row_Order_detail["p_price"], 2) ?></td>
                                 </tr>
                             </tbody>
                         <?php }
@@ -320,8 +320,9 @@ if (isset($_GET["order_id"])) {
                     <span>฿45.00</span>
                 </div>
                 <div class="body-detail-order">
-                    <span>ภาษีมูลค่าเพิ่ม</span>
-                    <span>7%</span>
+                    <span>ภาษีมูลค่าเพิ่ม 7%</span>
+                    <span><?php $vat = $row_Order["total_price"] - 45;
+                        echo '฿'. number_format($vat * (7/107),2) ?></span>
                 </div>
                 <div class="line-bottom-order-detail"></div>
                 <div class="body-detail-order">

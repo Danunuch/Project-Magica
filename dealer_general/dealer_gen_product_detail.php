@@ -57,7 +57,6 @@ if (isset($_POST['add-to-card'])) {
                     echo "<script>
                     $(document).ready(function() {
                         Swal.fire({
-                            position: 'top-end',
                             text: 'มีสินค้านี้ในรถเข็นแล้ว',
                             icon: 'warning',
                             timer: 12000,
@@ -88,7 +87,7 @@ if (isset($_POST['add-to-card'])) {
                     echo "<script>
                     $(document).ready(function() {
                         Swal.fire({
-                            position: 'top-end',
+                          
                             text: 'เพิ่มสินค้าในรถเข็นแล้ว',
                             icon: 'success',
                             timer: 12000,
@@ -118,7 +117,7 @@ if (isset($_POST['add-to-card'])) {
                 echo "<script>
                 $(document).ready(function() {
                     Swal.fire({
-                        position: 'top-end',
+                   
                         text: 'เพิ่มสินค้าในรถเข็นแล้ว',
                         icon: 'success',
                         timer: 12000,

@@ -677,7 +677,7 @@ if (isset($_POST['submit_order'])) {
                             <span id="sum-shipping-cost">฿45.00</span>
                         </div>
                         <div class="txt-content-summary1">
-                            <span>ภาษีมูลค่าเพิ่ม:</span> <span>7%</span>
+                            <span>ภาษีมูลค่าเพิ่ม 7% :</span> <span><?php echo '฿' . number_format($totalPrice*0.07,2);  ?></span>
                         </div>
                         <div class="txt-content-summary1">
                             <span>การชำระเงินทั้งหมด:</span>
