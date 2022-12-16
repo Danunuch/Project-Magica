@@ -235,9 +235,9 @@ $today = date("Y-m-d H:i:s");
                                         <td align="center">45.00 </td>
                                     </tr>
                                     <tr>
-                                        <td>ภาษีมูลค่าเพิ่ม </td>
+                                        <td>ภาษีมูลค่าเพิ่ม 7%</td>
                                         <td></td>
-                                        <td align="center">7% </td>
+                                        <td align="center"><?php echo number_format(($row['p_price']*7)/100 ,2);  ?> </td>
                                     </tr>
                                     <tr>
                                         <td> <b>ราคารวมทั้งหมด</b>  </td>

@@ -304,7 +304,7 @@ $row_comment = $result_comment->fetchAll();
     <div class="container-fluid box-pdd">
         <div class="img-pdd">
             <div class="img-box1-pdd">
-                <div class="img1">
+                <div class="img1 <?php if($rowPD_D['p_img1']==null){echo "none";}else{echo "";} ?>">
                     <a data-fancybox="gallery" href="admin/p_img/<?= $rowPD_D['p_img1']; ?>">
                         <img src="admin/p_img/<?= $rowPD_D['p_img1']; ?>" width="100%" alt="">
                     </a>
@@ -312,13 +312,13 @@ $row_comment = $result_comment->fetchAll();
                 </div>
             </div>
             <div class="img1-box2-pdd">
-                <div class="img2">
+                <div class="img2 <?php if($rowPD_D['p_img2']==null){echo "none";}else{echo "";} ?>">
                     <a data-fancybox="gallery" href="admin/p_img/<?= $rowPD_D['p_img2']; ?>">
                         <img src="admin/p_img/<?= $rowPD_D['p_img2']; ?>" width="100%" alt="">
                     </a>
 
                 </div>
-                <div class="img3">
+                <div class="img3 <?php if($rowPD_D['p_img3']==null){echo "none";}else{echo "";} ?>">
                     <a data-fancybox="gallery" href="admin/p_img/<?= $rowPD_D['p_img3']; ?>">
                         <img src="admin/p_img/<?= $rowPD_D['p_img3']; ?>" width="100%" alt="">
                     </a>
