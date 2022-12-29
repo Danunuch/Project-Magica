@@ -44,12 +44,12 @@ if (isset($_POST['g-recaptcha-response'])) {
         $password = $_POST['password'];
         $c_password = $_POST['c_password'];
         $line_Id = $_POST['line_Id'];
-        $addressed =  $_POST['address'];
-        $districts = $_POST['districts'];
-        $amphures =  $_POST['amphures'];
-        $provinces = $_POST['provinces'];
-        $zip_code = $_POST['zip_code'];
-        $address = $_POST['address'] . ' ' . $_POST['districts'] . ' ' . $_POST['amphures'] . ' ' . $_POST['provinces'] . ' ' . $_POST['zip_code'];
+        $address =  $_POST['address'];
+       // $districts = $_POST['districts'];
+      //  $amphures =  $_POST['amphures'];
+      //  $provinces = $_POST['provinces'];
+      //  $zip_code = $_POST['zip_code'];
+      //  $address = $_POST['address'] . ' ' . $_POST['districts'] . ' ' . $_POST['amphures'] . ' ' . $_POST['provinces'] . ' ' . $_POST['zip_code'];
         $position = $_POST['position'];
         $urole = 'dealer';
         $Org_name = $_POST['Org_name'];
@@ -92,19 +92,10 @@ if (isset($_POST['g-recaptcha-response'])) {
         } else if (empty($line_Id)) {
             $_SESSION['error'] = 'กรุณากรอกไลน์ไอดี';
             header("location: signup_dealer.php");
-        } else if (empty($addressed)) {
+        } else if (empty($address)) {
             $_SESSION['error'] = 'กรุณากรอกที่อยู่';
             header("location: signup_dealer.php");
-        } else if (empty($provinces)) {
-            $_SESSION['error'] = 'กรุณากรอกข้อมูลที่อยู่ให้ครบถ้วน';
-            header("location: signup_dealer.php");
-        } else if (empty($amphures)) {
-            $_SESSION['error'] = 'กรุณากรอกข้อมูลที่อยู่ให้ครบถ้วน';
-            header("location: signup_dealer.php");
-        } else if (empty($districts)) {
-            $_SESSION['error'] = 'กรุณากรอกข้อมูลที่อยู่ให้ครบถ้วน';
-            header("location: signup_dealer.php");
-        } else if (empty($position)) {
+        }  else if (empty($position)) {
             $_SESSION['error'] = 'กรุณากรอกข้อมูลที่อยู่ให้ครบถ้วน';
             header("location: signup_dealer.php");
         } else if (empty($Org_name)) {

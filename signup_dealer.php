@@ -64,72 +64,45 @@ $query = $sql_provinces->fetchAll();
         <div class=" pos-form">
             <form id="signup_form" action="signup_dealer_db.php" method="post" enctype="multipart/form-data">
                 <div class="form-group">
+                <div class="content-form">
+                        <div class="col-md-6">
+                            <p class="p-label">ชื่อ</p>
+                            <input type="text" value="<?php echo isset($_SESSION['firstname']) ? $_SESSION['firstname'] : ""; ?>" class="form-control" name="firstname" id="firstname" aria-describedby="firstname">
+
+                        </div>
+                        <div class="col-md-6">
+                            <p class="p-label">นามสกุล</p>
+                            <input type="text" value="<?php echo isset($_SESSION['lastname']) ? $_SESSION['lastname'] : ""; ?>" class="form-control" name="lastname" id="lastname" aria-describedby="lastname">
+                        </div>
+                    </div>
                     <div class="content-form">
-                        <div class="one">
-                            <div class="mm">
-                                <label for="firstname" class="form-label" style="margin-bottom: 0px;">ชื่อ</label>
-                                <input type="text" value="<?php echo isset($_SESSION['firstname']) ? $_SESSION['firstname'] : ""; ?>" class="form-control" name="firstname" aria-describedby="firstname">
-                            </div>
-                            <div class="mm">
-                                <label for="email" class="form-label" style="margin-bottom: 0px;">อีเมล</label>
-                                <input type="email" value="<?php echo isset($_SESSION['email']) ? $_SESSION['email'] : ""; ?>" class="form-control" name="email" aria-describedby="email">
-                            </div>
-                            <div class="mm">
-                                <label for="password" class="form-label" style="margin-bottom: 0px;">รหัสผ่าน</label>
-                                <input type="password" value="<?php echo isset($_SESSION['password']) ? $_SESSION['password'] : ""; ?>" class="form-control" name="password">
-                            </div>
-                            <div class="mm">
-                                <label for="line_Id" class="form-label" style="margin-bottom: 0px;">ไลน์ไอดี</label>
-                                <input type="text" value="<?php echo isset($_SESSION['line_Id']) ? $_SESSION['line_Id'] : ""; ?>" class="form-control" name="line_Id" aria-describedby="line_Id">
-                            </div>
+                        <div class="col-md-6">
+                            <p class="p-label">อีเมล</p>
+                            <input type="email" value="<?php echo isset($_SESSION['email']) ? $_SESSION['email'] : ""; ?>" class="form-control" name="email" id="email" aria-describedby="email">
                         </div>
-                        <div class="two">
-                            <div class="mm">
-                                <label for="lastname" class="form-label" style="margin-bottom: 0px;">นามสกุล</label>
-                                <input type="text" value="<?php echo isset($_SESSION['lastname']) ? $_SESSION['lastname'] : ""; ?>" class="form-control" name="lastname" aria-describedby="lastname">
-                            </div>
-                            <div class="mm">
-                                <label for="tel" class="form-label" style="margin-bottom: 0px;">โทรศัพท์</label>
-                                <input type="tel" value="<?php echo isset($_SESSION['tel']) ? $_SESSION['tel'] : ""; ?>" class="form-control" maxlength="10" name="tel" aria-describedby="tel">
-                            </div>
-                            <div class="mm">
-                                <label for="confirm password" class="form-label" style="margin-bottom: 0px;">ยืนยันรหัสผ่าน</label>
-                                <input type="password" value="<?php echo isset($_SESSION['c_password']) ? $_SESSION['c_password'] : ""; ?>" class="form-control" name="c_password">
-                            </div>
+                        <div class="col-md-6">
+                            <p class="p-label">โทรศัพท์</p>
+                            <input type="tel" value="<?php echo isset($_SESSION['tel']) ? $_SESSION['tel'] : ""; ?>" class="form-control" maxlength="10" name="tel" id="tel" aria-describedby="tel">
                         </div>
                     </div>
-                    <div class="three">
-
-                        <label for="address" class="form-label" id="label-address" style="margin-bottom: 0px;">ที่อยู่</label>
-                        <input type="text" value="<?php echo isset($_SESSION['address']) ? $_SESSION['address'] : ""; ?>" class="form-control" name="address" id="address" aria-describedby="address">
-
+                    <div class="content-form">
+                        <div class="col-md-6">
+                            <p class="p-label">รหัสผ่าน</p>
+                            <input type="password" value="<?php echo isset($_SESSION['password']) ? $_SESSION['password'] : ""; ?>" class="form-control" id="password" name="password">
+                        </div>
+                        <div class="col-md-6">
+                            <p class="p-label">ยืนยันรหัสผ่าน</p>
+                            <input type="password" value="<?php echo isset($_SESSION['c_password']) ? $_SESSION['c_password'] : ""; ?>" class="form-control" id="c_password" name="c_password">
+                        </div>
                     </div>
-                    <div class="four mb-4">
-                        <div class="container address-form">
-                            <div class="m4">
-                                <label for="sel1">จังหวัด</label>
-                                <select class="form-select" name="provinces" id="provinces">
-                                    <option value="<?php echo isset($_SESSION['provinces']) ? $_SESSION['provinces'] : ""; ?>" selected disabled>-กรุณาเลือกจังหวัด-</option>
-                                    <?php foreach ($query as $value) { ?>
-                                        <option value="<?= $value['name_th'] ?>"><?= $value['name_th'] ?></option>
-
-                                    <?php } ?>
-                                </select>
-                            </div>
-                            <div class="m4">
-                                <label for="sel1">อำเภอ</label>
-                                <select class="form-select" name="amphures" id="amphures">
-                                </select>
-                            </div>
-                            <div class="m4">
-                                <label for="sel1">ตำบล</label>
-                                <select class="form-select" name="districts" id="districts">
-                                </select>
-                            </div>
-                            <div class="m4">
-                                <label for="sel1">รหัสไปรษณีย์</label>
-                                <input type="text" name="zip_code" id="zip_code" class="form-control" readonly>
-                            </div>
+                    <div class="content-form">
+                        <div class="col-md-6">
+                            <p class="p-label">ไลน์ไอดี</p>
+                            <input type="text" value="<?php echo isset($_SESSION['line_Id']) ? $_SESSION['line_Id'] : ""; ?>" class="form-control" name="line_Id" id="line_Id" aria-describedby="line_Id">
+                        </div>
+                        <div class="col-md-6">
+                            <p class="p-label">ที่อยู่</p>
+                            <input type="text" value="<?php echo isset($_SESSION['address']) ? $_SESSION['address'] : ""; ?>" class="form-control" name="address" id="address" aria-describedby="address">
                         </div>
                     </div>
                     <p style="font-size: 24px;padding-left: 25px; "><b>ข้อมูลสถานประกอบการ</b></p>
@@ -151,10 +124,6 @@ $query = $sql_provinces->fetchAll();
                                 <input type="text" value="<?php echo isset($_SESSION['license_type']) ? $_SESSION['license_type'] : ""; ?>" class="form-control" name="license_type" aria-describedby="license_type">
                             </div>
 
-                            <!-- <div class="mm">
-                                <label for="cr_p" class="form-label" style="margin-bottom: 0px;">รูปภาพทะเบียนพาณิชย์</label>
-                                <input type="file" id="c_file" class="form-control" name="cr_p">
-                            </div> -->
                         </div>
                         <div class="two">
                             <div class="mm">
@@ -165,14 +134,6 @@ $query = $sql_provinces->fetchAll();
                                 <label for="Id_card" class="form-label" style="margin-bottom: 0px;">รหัสประจำตัวใบประกอบวิชาชีพ</label>
                                 <input type="text" value="<?php echo isset($_SESSION['Id_card']) ? $_SESSION['Id_card'] : ""; ?>" class="form-control" name="Id_card">
                             </div>
-                            <!-- <div class="mm">
-                                <label for="Org_address" class="form-label" style="margin-bottom: 0px;">ที่ตั้งสถานประกอบการ</label>
-                                <input type="text" value="<?php echo isset($_SESSION['Org_address']) ? $_SESSION['Org_address'] : ""; ?>" class="form-control" name="Org_address" aria-describedby="Org_address">
-                            </div> -->
-                            <!-- <div class="mm">
-                                <label for="license_pic" class="form-label" style="margin-bottom: 0px;">รูปภาพใบอนุญาต</label>
-                                <input type="file" id="c_file" value="<?php echo isset($_SESSION['license_pic']) ? $_SESSION['license_pic'] : ""; ?>" class="form-control" name="license_pic">
-                            </div> -->
                         </div>
                     </div>
                     <div class="container" style="align-items: center; display: flex;padding-left: 0px; margin-left: 0px; margin-bottom: 20px; margin-top: 10px;">

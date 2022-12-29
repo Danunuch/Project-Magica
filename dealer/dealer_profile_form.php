@@ -39,7 +39,7 @@ if (isset($_POST['update'])) {
     $sql->bindParam(":license_number", $license_number);
     $sql->execute();
 
-    if($sql){
+    if ($sql) {
         echo "<script>alert('แก้ไขข้อมูลเสร็จสิ้น')</script>";
         echo "<meta http-equiv='Refresh' content='0.001; url=dealer_profile'>";
     }
@@ -60,9 +60,60 @@ if (isset($_POST['update'])) {
     <div class="line-cut-bottom"></div>
     <div class="content">
         <form method="post">
-    
+
             <div class="form-group">
                 <div class="content-form">
+                    <div class="col-md-4">
+                        <p class="p-label">ชื่อ</p>
+                        <input type="text" value="<?php echo $row['firstname']; ?>" class="form-control fo" name="firstname" aria-describedby="firstname">
+
+                    </div>
+                    <div class="col-md-4">
+                        <p class="p-label">นามสกุล</p>
+                        <input type="text" value="<?php echo $row['lastname']; ?>" class="form-control fo" name="lastname" aria-describedby="lastname">
+                    </div>
+                </div>
+                <div class="content-form">
+                    <div class="col-md-4">
+                        <p class="p-label">อีเมล</p>
+                        <input type="email" value="<?php echo $row['email']; ?>" class="form-control fo" name="email" aria-describedby="email">
+                    </div>
+                    <div class="col-md-4">
+                        <p class="p-label">โทรศัพท์</p>
+                        <input type="tel" value="<?php echo $row['tel']; ?>" class="form-control fo" name="tel" aria-describedby="tel">
+                    </div>
+                </div>
+                <div class="content-form">
+                    <div class="col-md-4">
+                        <p class="p-label">ไลน์ไอดี</p>
+                        <input type="text" value="<?php echo $row['line_Id']; ?>" class="form-control fo" name="line_Id">
+                    </div>
+                    <div class="col-md-4">
+                    <p class="p-label">ตำแหน่ง</p>
+                        <input type="text" value="<?php echo $row['level']; ?>" class="form-control fo" name="level" aria-describedby="firstname" readonly>
+                    </div>
+                </div>
+                <div class="content-form">
+                    <div class="col-md-4">
+                        <p class="p-label">ชื่อสถานประกอบการ</p>
+                        <input type="text" value="<?php echo $row['Org_name']; ?>" class="form-control fo" name="Org_name" aria-describedby="email">
+                    </div>
+                    <div class="col-md-4">
+                        <p class="p-label">ประเภทใบอนุญาต</p>
+                        <input type="text" value="<?php echo $row['license_type']; ?>" class="form-control fo" name="license_type">
+                    </div>
+                </div>
+                <div class="content-form">
+                    <div class="col-md-4">
+                        <p class="p-label">ใบอนุญาตเลขที่</p>
+                        <input type="text" value="<?php echo $row['Id_card']; ?>" class="form-control fo" name="Id_card" aria-describedby="lastname">
+                    </div>
+                    <div class="col-md-7">
+                        <p class="p-label">รหัสประจำตัวใบประกอบวิชาชีพ</p>
+                        <input type="text" value="<?php echo $row['license_number']; ?>" class="form-control fo-1" name="license_number" aria-describedby="tel">
+                    </div>
+                </div>
+                <!-- <div class="content-form">
                     <div class="one">
                         <div class="mm">
                             <label for="firstname" class="form-label" style="margin-bottom: 0px;">ชื่อ</label>
@@ -88,8 +139,8 @@ if (isset($_POST['update'])) {
                         </div>
                     </div>
                     
-                </div>
-                <div class="content-form">
+                </div> -->
+                <!-- <div class="content-form">
                     <div class="one">
                         <div class="mm">
                             <label for="firstname" class="form-label" style="margin-bottom: 0px;">ตำแหน่ง</label>
@@ -115,7 +166,7 @@ if (isset($_POST['update'])) {
                         </div>
                     </div>
                     
-                </div>
+                </div> -->
                 <div class="btn-submit">
                     <button type="submit" name="update" class="btn" id="btn-save">บันทึก</button>
                 </div>
@@ -126,166 +177,6 @@ if (isset($_POST['update'])) {
 
 
 <style>
-
-.p-form-box {
-        background-color: white;
-        width: 90%;
-        height: 700px;
-        margin-top: 120px;
-        box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .top-title {
-        width: 100%;
-        height: 60px;
-        margin: 0 auto;
-        padding: 20px 10px 0px 10px;
-        margin-left: 20px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    .content {
-        width: 100%;
-        height: 30px;
-        /* background-color: #aaa; */
-        margin: 0 auto;
-    }
-
-    .text-title {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 10px;
-    }
-
-    .line-cut-center {
-        width: 2px;
-        height: 20px;
-        background-color: #ccc;
-        margin-left: 4px;
-        margin-right: 4px;
-    }
-
-    .line-cut-bottom {
-        width: 90%;
-        height: 2px;
-        margin: 0px 40px 0px 40px;
-        background-color: #ccc;
-    }
-
-    span {
-        font-size: 18px;
-    }
-
-    .content-form {
-        display: flex;
-        justify-content: flex-start;
-        margin-left: 40px;
-        margin-top: 20px;
-    }
-
-    .btn-submit {
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    .mm {
-        margin-right: 60px;
-    }
-
-    #btn-save {
-        width: 120px;
-        height: 40px;
-        background-color: #1979FE;
-        color: white;
-        margin-left: 40px;
-        margin-top: 20px;
-        box-shadow: none;
-    }
-
-@media screen and (max-width: 576px) {
-    .p-form-box {
-        background-color: white;
-        width: 100%;
-        height: 840px;
-        margin-top: 120px;
-        box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .top-title {
-        width: 100%;
-        height: 60px;
-        margin: 0 auto;
-        padding: 0px 0px 0px 35px;
-        margin-left: 0px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    .content {
-        width: 100%;
-        height: 30px;
-        /* background-color: #aaa; */
-        margin: 0 auto;
-    }
-
-    .text-title {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 0px;
-    }
-
-    .line-cut-center {
-        width: 2px;
-        height: 20px;
-        background-color: #ccc;
-        margin-left: 4px;
-        margin-right: 4px;
-    }
-
-    .line-cut-bottom {
-        width: 90%;
-        height: 2px;
-        margin: 0px 40px 0px 40px;
-        background-color: #ccc;
-    }
-
-    span {
-        font-size: 18px;
-    }
-
-    .content-form {
-        display: flex;
-        justify-content: flex-start;
-        margin-left: 0px;
-        margin-top: 20px;
-    }
-
-    .btn-submit {
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    .mm {
-        margin-right: 60px;
-    }
-
-    #btn-save {
-        width: 120px;
-        height: 40px;
-        background-color: #1979FE;
-        color: white;
-        margin-left: 55px;
-        margin-top: 20px;
-        box-shadow: none;
-    }
-}
-
-@media screen and (min-width: 1200px) {
     .p-form-box {
         background-color: white;
         width: 90%;
@@ -342,7 +233,7 @@ if (isset($_POST['update'])) {
         display: flex;
         justify-content: flex-start;
         margin-left: 40px;
-        margin-top: 20px;
+        margin-top: 5px;
     }
 
     .btn-submit {
@@ -363,6 +254,200 @@ if (isset($_POST['update'])) {
         margin-top: 20px;
         box-shadow: none;
     }
-}
-   
+ 
+    .fo {
+        width: 100%;
+    }
+
+    .fo-1 {
+        width: 58%;
+    }
+
+    .p-label {
+        width: 100%;
+        margin: 0px;
+    }
+
+    @media screen and (max-width: 576px) {
+        .p-form-box {
+            background-color: white;
+            width: 100%;
+            height: 840px;
+            margin-top: 120px;
+            box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .top-title {
+            width: 100%;
+            height: 60px;
+            margin: 0 auto;
+            padding: 0px 0px 0px 35px;
+            margin-left: 0px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .content {
+            width: 100%;
+            height: 30px;
+            /* background-color: #aaa; */
+            margin: 0 auto;
+        }
+
+        .text-title {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0px;
+        }
+
+        .line-cut-center {
+            width: 2px;
+            height: 20px;
+            background-color: #ccc;
+            margin-left: 4px;
+            margin-right: 4px;
+        }
+
+        .line-cut-bottom {
+            width: 90%;
+            height: 2px;
+            margin: 0px 40px 0px 40px;
+            background-color: #ccc;
+        }
+
+        span {
+            font-size: 18px;
+        }
+
+        .content-form {
+            display: flex;
+            justify-content: flex-start;
+            margin-left: 0px;
+            margin-top: 5px;
+        }
+
+        .btn-submit {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .mm {
+            margin-right: 60px;
+        }
+
+        #btn-save {
+            width: 120px;
+            height: 40px;
+            background-color: #1979FE;
+            color: white;
+            margin-left: 125px;
+            margin-top: 20px;
+            box-shadow: none;
+        }
+        .fo {
+            width: 100%;
+        }
+        .fo-1 {
+            width: 100%;
+        }
+
+        .p-label {
+            width: 100%;
+            margin: 0px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .p-form-box {
+            background-color: white;
+            width: 90%;
+            height: 700px;
+            margin-top: 120px;
+            box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .top-title {
+            width: 100%;
+            height: 60px;
+            margin: 0 auto;
+            padding: 20px 10px 0px 10px;
+            margin-left: 20px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .content {
+            width: 100%;
+            height: 30px;
+            /* background-color: #aaa; */
+            margin: 0 auto;
+        }
+
+        .text-title {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .line-cut-center {
+            width: 2px;
+            height: 20px;
+            background-color: #ccc;
+            margin-left: 4px;
+            margin-right: 4px;
+        }
+
+        .line-cut-bottom {
+            width: 90%;
+            height: 2px;
+            margin: 0px 40px 0px 40px;
+            background-color: #ccc;
+        }
+
+        span {
+            font-size: 18px;
+        }
+
+        .content-form {
+            display: flex;
+            justify-content: flex-start;
+            margin-left: 40px;
+            margin-top: 5px;
+        }
+
+        .btn-submit {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .mm {
+            margin-right: 60px;
+        }
+
+        #btn-save {
+            width: 120px;
+            height: 40px;
+            background-color: #1979FE;
+            color: white;
+            margin-left: 40px;
+            margin-top: 20px;
+            box-shadow: none;
+        }
+        .fo {
+            width: 70%;
+        }
+
+        .fo-1 {
+            width: 40%;
+        }
+
+        .p-label {
+            width: 80%;
+            margin: 0px;
+        }
+    }
 </style>

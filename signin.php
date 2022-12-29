@@ -72,7 +72,7 @@ error_reporting(0);
                                     <div class="input-group-text" id="input-group-text">
                                         <i class="bi bi-person-circle" id="bi-person-circle"></i>
                                     </div>
-                                    <input type="email" id="email" class="form-control" name="email" aria-describedby="email" placeholder="อีเมล" style="border-left: none; padding-left: 3px; border-radius: 0px 25px 25px 0px;">
+                                    <input type="email" class="form-control" name="email" aria-describedby="email" placeholder="อีเมล" style="border-left: none; padding-left: 3px; border-radius: 0px 25px 25px 0px;">
                                 </div>
                             </div>
                             <div class="mb-3 mt-2" style="display: flex; justify-content: center;">
@@ -80,7 +80,7 @@ error_reporting(0);
                                     <div class="input-group-text" id="input-group-text">
                                         <i class="bi bi-lock-fill"></i>
                                     </div>
-                                    <input type="password" id="password" class="form-control" name="password" placeholder="รหัสผ่าน" style="border-left: none; padding-left: 3px; border-radius: 0px 25px 25px 0px;">
+                                    <input type="password" class="form-control" name="password" placeholder="รหัสผ่าน" style="border-left: none; padding-left: 3px; border-radius: 0px 25px 25px 0px;">
                                 </div>
                             </div>
                             <div class="mb3 login-btn-submit">
@@ -90,7 +90,7 @@ error_reporting(0);
                                 <span id="login-txt1">หากคุณยังไม่มีบัญชีผู้ใช้งาน </span>
                             </div>
                            <div class="mt-2 regis-but">
-                               <a href="signup.php">  <button type="button" id="regis-now" style="border: none; background: none;color: #014EB8;">สมัครสมาชิกเพื่อเข้าใช้งาน</button>
+                               <a href="signup.php" style="text-decoration: none;">  <button type="button" id="regis-now" style="border: none; background: none;color: #014EB8; text-decoration: none;">สมัครสมาชิกเพื่อเข้าใช้งาน</button>
                            </a> </div>
                             <div class="mt-2 regis-but">
                                 <button type="button" id="regis-now" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="border: none; background: none;color: #014EB8;">สมัครตัวแทนจำหน่าย</button>

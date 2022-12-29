@@ -40,13 +40,13 @@ if (isset($_POST['g-recaptcha-response'])) {
         $password = $_POST['password'];
         $c_password = $_POST['c_password'];
         $line_Id = $_POST['line_Id'];
-        $addressed =  $_POST['address'];
+        $address =  $_POST['address'];
         $Id_card = $_POST['Id_card'];
-        $districts = $_POST['districts'];
-        $amphures =  $_POST['amphures'];
-        $provinces = $_POST['provinces'];
-        $zip_code = $_POST['zip_code'];
-        $address = $_POST['address'] . ' ' . $_POST['districts'] . ' ' . $_POST['amphures'] . ' ' . $_POST['provinces'] . ' ' . $_POST['zip_code'];
+     //   $districts = $_POST['districts'];
+     //   $amphures =  $_POST['amphures'];
+     //   $provinces = $_POST['provinces'];
+     //   $zip_code = $_POST['zip_code'];
+    //   $address = $_POST['address'] . ' ' . $_POST['districts'] . ' ' . $_POST['amphures'] . ' ' . $_POST['provinces'] . ' ' . $_POST['zip_code'];
         $urole = 'dealer_general';
         $level = 'member';
         $cb = $_POST['cb'];
@@ -84,22 +84,13 @@ if (isset($_POST['g-recaptcha-response'])) {
         } else if (empty($line_Id)) {
             $_SESSION['error'] = 'กรุณากรอกไลน์ไอดี';
             header("location: signup_dealer_general.php");
-        } else if (empty($addressed)) {
+        } else if (empty($address)) {
             $_SESSION['error'] = 'กรุณากรอกที่อยู่';
             header("location: signup_dealer_general.php");
         } else if (empty($Id_card)) {
             $_SESSION['error'] = 'กรุณากรอกเลขบัตรประจำตัวประชาชน';
             header("location: signup_dealer_general.php");
-        } else if (empty($provinces)) {
-            $_SESSION['error'] = 'กรุณากรอกข้อมูลที่อยู่ให้ครบถ้วน';
-            header("location: signup_dealer_general.php");
-        } else if (empty($amphures)) {
-            $_SESSION['error'] = 'กรุณากรอกข้อมูลที่อยู่ให้ครบถ้วน';
-            header("location: signup_dealer_general.php");
-        } else if (empty($districts)) {
-            $_SESSION['error'] = 'กรุณากรอกข้อมูลที่อยู่ให้ครบถ้วน';
-            header("location: signup_dealer_general.php");
-        } else if (empty($cb)) {
+        }  else if (empty($cb)) {
             $_SESSION['error'] = 'กรุณายอมรับ ข้อกำหนดและเงื่อนไข';
             header("location: signup_dealer_general.php");
         } else {

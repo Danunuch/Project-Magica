@@ -31,7 +31,7 @@ if (isset($_POST['update'])) {
     $sql->execute();
 
     if ($sql) {
-      //   echo "<script>alert('แก้ไขข้อมูลเสร็จสิ้น')</script>";
+        //   echo "<script>alert('แก้ไขข้อมูลเสร็จสิ้น')</script>";
         echo "<meta http-equiv='Refresh' content='0.001; url=profile'>";
         // header("refresh:0.0000000001; url=profile");
     }
@@ -55,31 +55,36 @@ if (isset($_POST['update'])) {
 
             <div class="form-group">
                 <div class="content-form">
-                    <div class="one">
-                        <div class="mm">
-                            <label for="firstname" class="form-label" style="margin-bottom: 0px;">ชื่อ</label>
-                            <input type="text" value="<?php echo $row['firstname']; ?>" class="form-control" name="firstname" aria-describedby="firstname">
-                        </div>
-                        <div class="mm">
-                            <label for="email" class="form-label" style="margin-bottom: 0px;">อีเมล</label>
-                            <input type="email" value="<?php echo $row['email']; ?>" class="form-control" name="email" aria-describedby="email">
-                        </div>
-                        <div class="mm">
-                            <label for="line_Id" class="form-label" style="margin-bottom: 0px;">ไลน์ไอดี</label>
-                            <input type="text" value="<?php echo $row['line_Id']; ?>" class="form-control" name="line_Id">
-                        </div>
+                    <div class="col-md-4">
+                        <p class="p-label">ชื่อ</p>
+                        <input type="text" value="<?php echo $row['firstname']; ?>" class="form-control fo" name="firstname" aria-describedby="firstname">
+
                     </div>
-                    <div class="two">
-                        <div class="mm">
-                            <label for="lastname" class="form-label" style="margin-bottom: 0px;">นามสกุล</label>
-                            <input type="text" value="<?php echo $row['lastname']; ?>" class="form-control" name="lastname" aria-describedby="lastname">
-                        </div>
-                        <div class="mm">
-                            <label for="tel" class="form-label" style="margin-bottom: 0px;">โทรศัพท์</label>
-                            <input type="tel" value="<?php echo $row['tel']; ?>" class="form-control" name="tel" aria-describedby="tel">
-                        </div>
+                    <div class="col-md-4">
+                        <p class="p-label">นามสกุล</p>
+                        <input type="text" value="<?php echo $row['lastname']; ?>" class="form-control fo" name="lastname" aria-describedby="lastname">
                     </div>
                 </div>
+                <div class="content-form">
+                    <div class="col-md-4">
+                        <p class="p-label">อีเมล</p>
+                        <input type="email" value="<?php echo $row['email']; ?>" class="form-control fo" name="email" aria-describedby="email">
+
+                    </div>
+                    <div class="col-md-4">
+                        <p class="p-label">โทรศัพท์</p>
+                        <input type="tel" value="<?php echo $row['tel']; ?>" class="form-control fo" name="tel" aria-describedby="tel">
+                    </div>
+                </div>
+                <div class="content-form">
+                    <div class="col-md-4">
+                        <p class="p-label">ไลน์ไอดี</p>
+                        <input type="text" value="<?php echo $row['line_Id']; ?>" class="form-control fo" name="line_Id">
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                </div>
+               
                 <div class="btn-submit">
                     <button type="submit" name="update" class="btn" id="btn-save">บันทึก</button>
                 </div>
@@ -146,7 +151,7 @@ if (isset($_POST['update'])) {
         display: flex;
         justify-content: flex-start;
         margin-left: 40px;
-        margin-top: 20px;
+        margin-top: 5px;
     }
 
     .btn-submit {
@@ -166,6 +171,15 @@ if (isset($_POST['update'])) {
         margin-left: 40px;
         margin-top: 20px;
         box-shadow: none;
+    }
+
+    .fo {
+        width: 100%;
+    }
+
+    .p-label {
+        width: 80%;
+        margin: 0px;
     }
 
     @media screen and (max-width: 576px) {
@@ -225,10 +239,11 @@ if (isset($_POST['update'])) {
             display: flex;
             justify-content: flex-start;
             margin-left: 0px;
-            margin-top: 20px;
+            margin-top: 5px;
         }
 
         .btn-submit {
+            width: 100%;
             display: flex;
             justify-content: flex-start;
         }
@@ -242,10 +257,20 @@ if (isset($_POST['update'])) {
             height: 40px;
             background-color: #1979FE;
             color: white;
-            margin-left: 55px;
+            margin-left: 125px;
             margin-top: 20px;
             box-shadow: none;
         }
+
+        .fo {
+            width: 100%;
+        }
+
+        .p-label {
+            width: 80%;
+            margin: 0px;
+        }
+
     }
 
     @media screen and (min-width: 1200px) {
@@ -305,7 +330,7 @@ if (isset($_POST['update'])) {
             display: flex;
             justify-content: flex-start;
             margin-left: 40px;
-            margin-top: 20px;
+            margin-top: 5px;
         }
 
         .btn-submit {
@@ -325,6 +350,15 @@ if (isset($_POST['update'])) {
             margin-left: 40px;
             margin-top: 20px;
             box-shadow: none;
+        }
+
+        .fo {
+            width: 70%;
+        }
+
+        .p-label {
+            width: 80%;
+            margin: 0px;
         }
     }
 </style>
