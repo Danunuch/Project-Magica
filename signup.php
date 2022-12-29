@@ -10,8 +10,7 @@ error_reporting(0);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up - MAGICA</title>
-    <link rel="stylesheet" href="../magica/asset/css/web_tablet_style.css?v=<?php echo time(); ?>">
-    <link rel="stylesheet" href="../magica/asset/css/mobile_style.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="asset/css/web_tablet_style.css?v=<?php echo time(); ?>">
 </head>
 
 <?php
@@ -23,7 +22,7 @@ $query = $sql_provinces->fetchAll();
 
 <!-- //// Header //// -->
 
-<?php include('../magica/header.php') ?>
+<?php include('header.php') ?>
 <!-- /////  Content //////-->
 <div class="bg-text-regis">
 
@@ -104,7 +103,7 @@ $query = $sql_provinces->fetchAll();
                         <input type="text" value="<?php echo isset($_SESSION['address']) ? $_SESSION['address'] : ""; ?>" class="form-control" name="address" id="address" aria-describedby="address">
 
                     </div>
-                    <div class="four mb-4">
+                    <div class="four mb-4" style="visibility: hidden;">
                         <div class="container address-form">
                             <div class="m4">
                                 <label for="sel1">จังหวัด</label>
@@ -149,8 +148,8 @@ $query = $sql_provinces->fetchAll();
 
 
 <!-- ///// Footer   -->
-<?php include('../magica/footer.php') ?>
+<?php include('footer.php') ?>
 <!-- ///// Footer   -->
-<script src="/magica/action.js"></script>
+<script src="action.js"></script>
 <?php include('config/ad_script.php'); ?>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>

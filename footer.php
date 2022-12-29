@@ -2,7 +2,7 @@
         <div class="row">
             <div class="col-lg-3 mb-3">
                 <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="Bootstrap">
-                    <img class="img-logo" src="/magica/asset/img/LogoMGC.png" alt="MGC">
+                    <img class="img-logo" src="asset/img/LogoMGC.png" alt="MGC">
 
                 </a>
                 <ul class="list-unstyled small text-muted">
@@ -39,14 +39,14 @@
             <div class="col-6 col-lg-2 mb-3">
                 <h5>บริการจัดส่ง</h5>
                 <ul class="list-unstyled">
-                    <img style="width: 120px;" src="/magica/asset/img/logis-footer.png" alt="MGC">
+                    <img style="width: 120px;" src="asset/img/logis-footer.png" alt="MGC">
                 </ul>
             </div>
             <div class="col-6 col-lg-2 mb-3">
                 <h5>ติดตามข่าวสารได้ที่:</h5>
                 <ul class="list-unstyled">
-                    <a href="https://www.facebook.com/DrMagicaDeBarcelona" target="_blank"><img style="width: 40px;" src="/magica/asset/img/icon-fb.png" alt="icon-fb"></a>
-                    <a href="https://page.line.me/?accountId=611hxcuf&fbclid=IwAR3Fste101DDmhuLCZQdQLybkaABCTd0Om9s84lCD8jaJO97-g4JE3FOeiE" target="_blank"><img style="width: 42px;" src="/magica/asset/img/icon-line.png" alt="icon-line"></a>
+                    <a href="https://www.facebook.com/DrMagicaDeBarcelona" target="_blank"><img style="width: 40px;" src="asset/img/icon-fb.png" alt="icon-fb"></a>
+                    <a href="https://page.line.me/?accountId=611hxcuf&fbclid=IwAR3Fste101DDmhuLCZQdQLybkaABCTd0Om9s84lCD8jaJO97-g4JE3FOeiE" target="_blank"><img style="width: 42px;" src="asset/img/icon-line.png" alt="icon-line"></a>
                     <li class="mb-2"><a href="privacy_policy" style="text-decoration: none; color: black;">นโยบายความเป็นส่วนตัว</a></li>
                 </ul>
             </div>

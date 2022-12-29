@@ -296,8 +296,8 @@ $row_comment = $result_comment->fetchAll();
     <!-- Header Zone-->
     <header class="container-fluid" id="navbar">
         <nav class="navbar-container container-fluid">
-            <a href="/magica/user/home" class="home-link">
-                <img class="img-logo" src="/magica/asset/img/LogoMGC.png" alt="MGC">
+            <a href="home" class="home-link">
+                <img class="img-logo" src="../asset/img/LogoMGC.png" alt="MGC">
 
             </a>
             <div class="container s-search">
@@ -367,7 +367,7 @@ $row_comment = $result_comment->fetchAll();
                                     <li>
                                         <hr class="dropdown-divider" />
                                     </li>
-                                    <li><img class="img-logo-profile" src="/magica/asset/img/LogoMGC.png" alt="MGC">
+                                    <li><img class="img-logo-profile" src="../asset/img/LogoMGC.png" alt="MGC">
                                 </ul>
                             </div>
                         </div>
@@ -454,15 +454,18 @@ $row_comment = $result_comment->fetchAll();
                 <div class="txt-comment">
                     <?php
                     if (count($row_comment) > 0) { ?>
-                        <?php foreach (array_reverse($row_comment) as $row_comment) { ?>
+                        <?php foreach (array_reverse($row_comment) as $row_comment) {
+                            $com = explode(" ",$row_comment["created_at"]);
+                            ?>
                             <div class="content-comment">
                                 <div class="box-content-comment">
 
                                     <span class="txt-comment-cusname"><?= $row_comment["cus_name"] ?></span>
-                                    <span><?= $row_comment["created_at"] ?></span>
+                                    <span><?= $com[0]; ?></span>
                                 </div>
 
                                 <span><?= $row_comment["comment_text"] ?></span>
+                               
                             </div>
                             <div class="line-bottom-comment"></div>
                         <?php }
@@ -520,5 +523,5 @@ $row_comment = $result_comment->fetchAll();
         ?>
     </div>
 </body>
-<script src="/magica/action.js"></script>
+<script src="../action.js"></script>
 </html>

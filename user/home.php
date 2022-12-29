@@ -43,8 +43,8 @@ if (isset($_GET['act'])) {
     <!-- Header Zone-->
     <header class="container-fluid" id="navbar">
         <nav class="navbar-container container-fluid">
-            <a href="/magica/user/home" class="home-link">
-                <img class="img-logo" src="/magica/asset/img/LogoMGC.png" alt="MGC">
+            <a href="home" class="home-link">
+                <img class="img-logo" src="../asset/img/LogoMGC.png" alt="MGC">
 
             </a>
             <form class="s-search" method="get">
@@ -116,7 +116,7 @@ if (isset($_GET['act'])) {
                                     <li>
                                         <hr class="dropdown-divider" />
                                     </li>
-                                    <li><img class="img-logo-profile" src="/magica/asset/img/LogoMGC.png" alt="MGC">
+                                    <li><img class="img-logo-profile" src="../asset/img/LogoMGC.png" alt="MGC">
                                 </ul>
                             </div>
                         </div>
@@ -283,6 +283,6 @@ if (isset($_GET['act'])) {
         <?php include('footer.php') ?>
     </div>
 </body>
-<script src="/magica/action.js"></script>
+<script src="../action.js"></script>
 
 </html>

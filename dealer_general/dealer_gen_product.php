@@ -66,7 +66,7 @@ $p_type = $stmtType->fetchAll();
     <header class="container-fluid" id="navbar">
         <nav class="navbar-container container-fluid">
             <a href="../dealer_general/home" class="home-link">
-                <img class="img-logo" src="/magica/asset/img/LogoMGC.png" alt="MGC">
+                <img class="img-logo" src="../asset/img/LogoMGC.png" alt="MGC">
 
             </a>
             <form class="s-search" method="get">
@@ -131,7 +131,7 @@ $p_type = $stmtType->fetchAll();
                                     <li>
                                         <hr class="dropdown-divider" />
                                     </li>
-                                    <li><img class="img-logo-profile" src="/magica/asset/img/LogoMGC.png" alt="MGC">
+                                    <li><img class="img-logo-profile" src="../asset/img/LogoMGC.png" alt="MGC">
                                 </ul>
                             </div>
                         </div>
@@ -304,6 +304,6 @@ $p_type = $stmtType->fetchAll();
         <?php include('footer.php') ?>
     </div>
 </body>
-<script src="/magica/action.js"></script>
+<script src="../action.js"></script>
 
 </html>

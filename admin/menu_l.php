@@ -249,7 +249,8 @@ if (!isset($_SESSION['admin_login'])) {
 
     <script src="../admin/vendors/iCheck/icheck.min.js"></script>
 
-    <script src="../admin/vendors/skycons/skycons.js"></script>
+    <script src="../admin/vendors/skycons/skycons.js"></script> 
+    <!-- ** -->
 
     <script src="../admin/vendors/Flot/jquery.flot.js"></script>
     <script src="../admin/vendors/Flot/jquery.flot.pie.js"></script>

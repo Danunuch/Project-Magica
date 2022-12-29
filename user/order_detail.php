@@ -186,8 +186,8 @@ if (isset($_GET["order_id"])) {
 <body style="font-family: 'Kanit', sans-serif ;">
 <header class="container-fluid" id="navbar">
         <nav class="navbar-container container-fluid">
-            <a href="/magica/user/home" class="home-link">
-                <img class="img-logo" src="/magica/asset/img/LogoMGC.png" alt="MGC">
+            <a href="home" class="home-link">
+                <img class="img-logo" src="../asset/img/LogoMGC.png" alt="MGC">
 
             </a>
             <div class="container s-search">
@@ -257,7 +257,7 @@ if (isset($_GET["order_id"])) {
                                     <li>
                                         <hr class="dropdown-divider" />
                                     </li>
-                                    <li><img class="img-logo-profile" src="/magica/asset/img/LogoMGC.png" alt="MGC">
+                                    <li><img class="img-logo-profile" src="../asset/img/LogoMGC.png" alt="MGC">
                                 </ul>
                             </div>
                         </div>
@@ -488,5 +488,5 @@ if (isset($_GET["order_id"])) {
         });
     </script>
 </body>
-<script src="/magica/action.js"></script>
+<script src="../action.js"></script>
 </html>

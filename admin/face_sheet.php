@@ -93,7 +93,8 @@ $today = date("Y-m-d H:i:s");
     }
 
     .posit1 {
-        width: 40%;
+        width: 80%;
+        max-width: 80%;
         border: 2px solid #000000;
         padding: 10px;
         display: block;
@@ -101,7 +102,7 @@ $today = date("Y-m-d H:i:s");
     }
 
     .posit2 {
-        width: 40%;
+        width: 80%;
         height: 220px;
         border-left: 2px solid #000000;
         border-bottom: 2px solid #000000;
@@ -173,6 +174,180 @@ $today = date("Y-m-d H:i:s");
         align-items: center;
     }
 
+    @media screen and (max-width: 576px) {
+        .pos {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            max-height: 80%;
+            /* justify-content: space-between; */
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .posit1 {
+            width: 100%;
+   
+            border: 2px solid #000000;
+            padding: 10px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .posit2 {
+            width: 80%;
+            height: 220px;
+            border-left: 2px solid #000000;
+            border-bottom: 2px solid #000000;
+            border-right: 2px solid #000000;
+            /* border: 2px solid #000000; */
+            padding: 10px;
+            margin: 0 auto;
+            position: relative;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .home-content2 {
+            font-size: 20px;
+            color: #000;
+            width: auto;
+            font-weight: bold;
+        }
+
+        .title {
+            font-size: 16px;
+
+        }
+
+        .h5 {
+            font-size: small;
+            font-weight: normal;
+
+        }
+
+        .card {
+            width: 800px;
+            height: auto;
+        }
+
+        .ex {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .ta {
+            font-size: 16px;
+        }
+
+        .bi-plus-circle {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            color: blue;
+            font-size: 60px;
+            z-index: 2;
+        }
+
+        .m {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .pos {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            max-height: 80%;
+            /* justify-content: space-between; */
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .posit1 {
+            width: 40%;
+            max-width: 80%;
+            border: 2px solid #000000;
+            padding: 10px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .posit2 {
+            width: 40%;
+            height: 220px;
+            border-left: 2px solid #000000;
+            border-bottom: 2px solid #000000;
+            border-right: 2px solid #000000;
+            /* border: 2px solid #000000; */
+            padding: 10px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .order_Id {
+            width: 100%;
+            height: 35px;
+            display: flex;
+            padding: 5px;
+            align-items: center;
+            justify-content: flex-end;
+            /* background-color: #000000;
+        color: #FFFFFF; */
+        }
+
+        .c1 {
+            width: 10%;
+        }
+
+        .c2 {
+            width: 90%;
+        }
+
+        .q1 {
+            width: 30%;
+        }
+
+        .q2 {
+            width: 70%;
+        }
+
+        .q3 {
+            width: 40%;
+            display: flex;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .box-c {
+            display: flex;
+        }
+
+        .box-qr {
+            position: absolute;
+            width: 50%;
+            height: 197px;
+            max-height: 80%;
+            left: 0;
+            padding: 10px;
+            border: 2px solid #000000;
+        }
+
+        #tax_form {
+            font-size: 16px;
+        }
+
+        .p-1 {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 </style>
 
 

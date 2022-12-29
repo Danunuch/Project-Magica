@@ -63,7 +63,7 @@ $p_type = $stmtType->fetchAll();
 <body style="font-family: 'Kanit', sans-serif ;">
 
     <!-- //// Header //// -->
-    <?php include('../magica/header.php'); ?>
+    <?php include('header.php'); ?>
     <!-- //// Header //// -->
     <div class="container-fluid">
         <div class="row" style="margin-top: 110px;">
@@ -228,10 +228,10 @@ $p_type = $stmtType->fetchAll();
     </div>
     <div class="footer" style="margin-top: 20px;">
         <!-- ///// Footer   -->
-        <?php include('../magica/footer.php'); ?>
+        <?php include('footer.php'); ?>
         <!-- ///// Footer   -->
     </div>
 </body>
-<script src="/magica/action.js"></script>
+<script src="action.js"></script>
 
 </html>

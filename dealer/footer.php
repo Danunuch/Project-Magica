@@ -45,7 +45,7 @@
             <div class="col-6 col-lg-2 mb-3">
                 <h5>ติดตามข่าวสารได้ที่:</h5>
                 <ul class="list-unstyled">
-                    <a href="https://www.facebook.com/DrMagicaDeBarcelona" target="_blank"><img style="width: 40px;" src="/magica/asset/img/icon-fb.png" alt="icon-fb"></a>
+                    <a href="https://www.facebook.com/DrMagicaDeBarcelona" target="_blank"><img style="width: 40px;" src="../asset/img/icon-fb.png" alt="icon-fb"></a>
                     <a href="https://page.line.me/?accountId=611hxcuf&fbclid=IwAR3Fste101DDmhuLCZQdQLybkaABCTd0Om9s84lCD8jaJO97-g4JE3FOeiE" target="_blank"><img style="width: 42px;" src="../asset/img/icon-line.png" alt="icon-line"></a>
                     <li class="mb-2"><a href="../privacy_policy" target="_blank" style="text-decoration: none; color: black;">นโยบายความเป็นส่วนตัว</a></li>
                 </ul>

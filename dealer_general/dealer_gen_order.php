@@ -418,7 +418,7 @@ if (isset($_POST['submit_order'])) {
     <header class="container-fluid" id="navbar">
         <nav class="navbar-container container-fluid">
             <a href="../dealer_general/home" class="home-link">
-                <img class="img-logo" src="/magica/asset/img/LogoMGC.png" alt="MGC">
+                <img class="img-logo" src="../asset/img/LogoMGC.png" alt="MGC">
 
             </a>
             <div class="container s-search">
@@ -481,7 +481,7 @@ if (isset($_POST['submit_order'])) {
                                     <li>
                                         <hr class="dropdown-divider" />
                                     </li>
-                                    <li><img class="img-logo-profile" src="/magica/asset/img/LogoMGC.png" alt="MGC">
+                                    <li><img class="img-logo-profile" src="../asset/img/LogoMGC.png" alt="MGC">
                                 </ul>
                             </div>
                         </div>
@@ -799,6 +799,6 @@ if (isset($_POST['submit_order'])) {
         });
     </script>
 </body>
-<script src="/magica/action.js"></script>
+<script src="../action.js"></script>
 
 </html>

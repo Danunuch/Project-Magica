@@ -8,7 +8,7 @@
     <title>About</title>
 </head>
 <!-- //// Header //// -->
-<?php include('../magica/header.php'); ?>
+<?php include('header.php'); ?>
 <!-- //// Header //// -->
 
 <body>
@@ -68,7 +68,7 @@
 
     </div>
 </body>
-<?php include('../magica/footer.php'); ?>
-<script src="/magica/action.js"></script>
+<?php include('footer.php'); ?>
+<script src="action.js"></script>
 
 </html>

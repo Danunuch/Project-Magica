@@ -298,7 +298,7 @@ $row_comment = $result_comment->fetchAll();
 <body style="font-family: 'Kanit', sans-serif ;">
     <!-- Header Zone-->
    <!-- //// Header //// -->
-<?php include('../magica/header.php'); ?>
+<?php include('header.php'); ?>
 <!-- //// Header //// -->
 
     <div class="container-fluid box-pdd">
@@ -441,5 +441,5 @@ $row_comment = $result_comment->fetchAll();
         ?>
     </div>
 </body>
-<script src="/magica/action.js"></script>
+<script src="action.js"></script>
 </html>

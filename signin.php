@@ -7,12 +7,11 @@ error_reporting(0);
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../magica/asset/css/web_tablet_style.css?v=<?php echo time(); ?>">
-    <link rel="stylesheet" href="../magica/asset/css/mobile_style.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="asset/css/web_tablet_style.css?v=<?php echo time(); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign in - MAGICA</title>
-    <link rel="shortcut icon" href="../magica/asset/img/icon-web.ico">
+    <link rel="shortcut icon" href="asset/img/icon-web.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
@@ -31,7 +30,7 @@ error_reporting(0);
 <div class="container-fluid" style="padding: 0px; font-family: 'Kanit', sans-serif ;">
     <div class="login-bg">
         <div class="login-bg-box">
-            <a href="../magica/">
+            <a href="index">
                 <div class="login-btn-back">
                     <i class="bi bi-caret-left"></i> back
                 </div>
@@ -57,12 +56,12 @@ error_reporting(0);
             <div class="container" style="padding-left: 0px; padding-right: 0px;">
                 <div class=" row pos">
                     <div class="login-box1" id="login-box1">
-                        <img src="/magica/asset/img/img-modal-login.png" id="login-img-box" alt="">
+                        <img src="asset/img/img-modal-login.png" id="login-img-box" alt="">
                     </div>
                     <div class="login-box2" id="login-box2">
 
                         <div class="modal-logo-mgc mt-4 mb-2 ">
-                            <img class="mgc-login-logo" src="/magica/asset/img/LogoMGC.png" alt="">
+                            <img class="mgc-login-logo" src="asset/img/LogoMGC.png" alt="">
                         </div>
 
                         <span class="login-text"><b>เข้าสู่ระบบ</b></span>
@@ -100,8 +99,8 @@ error_reporting(0);
                                 <span>หรือ</span>
                             </div> -->
                             <!-- <div style="display: flex; justify-content: center; align-items: center;">
-                                <a href=""><img class="login-fb" src="/magica/asset/img/icon-fb.png" alt=""></a>
-                                <a href=""><img class="login-gg" src="/magica/asset/img/icon-google.png" alt=""></a>
+                                <a href=""><img class="login-fb" src="asset/img/icon-fb.png" alt=""></a>
+                                <a href=""><img class="login-gg" src="asset/img/icon-google.png" alt=""></a>
                             </div> -->
                         </form>
                     </div>
@@ -118,13 +117,13 @@ error_reporting(0);
         <div class="modal-content" id="w-modal">
             <div class="modal-header" style="display: flex;position: relative; justify-content: center; text-align: center;">
                 <button type="button" data-bs-dismiss="modal" style="border: none; background: none;"><i class="bi bi-arrow-left-circle"></i> </button>
-                <h3 class="modal-title" id="staticBackdropLabel"><img class="img-logo" src="../magica/asset/img/LogoMGC.png" alt=""></h3>
+                <h3 class="modal-title" id="staticBackdropLabel"><img class="img-logo" src="asset/img/LogoMGC.png" alt=""></h3>
 
             </div>
             <div class="modal-body ">
                 <div class="bg-modal">
                     <!-- <div class="bg-user">
-                        <a href="../magica/signup.php">
+                        <a href="signup.php">
                             <div class="bg-circle">
                                 <i class="bi bi-people-fill"></i>
                             </div>
@@ -133,7 +132,7 @@ error_reporting(0);
                     </div>
                     <div class="line-center-modal"></div> -->
                     <div class="bg-derler">
-                        <a href="../magica/signup_dealer_general.php">
+                        <a href="signup_dealer_general.php">
                             <div class="bg-circle">
                                 <i class="bi bi-person-workspace"></i>
 
@@ -143,7 +142,7 @@ error_reporting(0);
                     </div>
                     <div class="line-center-modal"></div>
                     <div class="bg-derler">
-                        <a href="../magica/signup_dealer.php">
+                        <a href="signup_dealer.php">
                             <div class="bg-circle">
                                 <i class="bi bi-person-workspace"></i>
                             </div>
@@ -165,4 +164,4 @@ error_reporting(0);
 
 <!-- //// Content //// -->
 
-<script src="/magica/action.js"></script>
+<script src="action.js"></script>

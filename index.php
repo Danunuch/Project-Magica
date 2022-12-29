@@ -26,7 +26,7 @@ error_reporting(0);
 </head>
 
 <!-- //// Header //// -->
-<?php include('../magica/header.php'); ?>
+<?php include('header.php'); ?>
 <!-- //// Header //// -->
 
 
@@ -190,7 +190,7 @@ error_reporting(0);
 <!-- //// Content //// -->
 
 <!-- ///// Footer   -->
-<?php include('../magica/footer.php'); ?>
+<?php include('footer.php'); ?>
 <!-- ///// Footer   -->
 
-<script src="/magica/action.js"></script>
+<script src="action.js"></script>

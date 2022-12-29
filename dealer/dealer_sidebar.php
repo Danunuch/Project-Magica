@@ -17,9 +17,7 @@
                             <li><a href="../dealer/dealer_profile" id="p-list-menu">
                                     <p id="p-list-menu">ข้อมูลของฉัน</p>
                                 </a></li>
-                            <li><a href="../dealer/dealer_profile_bank" id="p-list-menu">
-                                    <p id="p-list-menu">บัญชีธนาคาร</p>
-                                </a></li>
+                         
                             <li><a href="../dealer/dealer_profile_password" id="p-list-menu">
                                     <p id="p-list-menu">เปลี่ยนรหัสผ่าน</p>
                                 </a></li>

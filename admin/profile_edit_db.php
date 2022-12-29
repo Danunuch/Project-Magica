@@ -34,30 +34,6 @@ if (isset($_POST['btn_update'])) {
     $fileNew = rand() . "." . $fileActExt;
     $filePath = "../admin/m_img/" . $fileNew;
 
-
-    if (empty($firstname)) {
-        $_SESSION['error'] = 'กรุณากรอกชื่อ';
-        header("location: profile_edit.php");
-    } else if (empty($lastname)) {
-        $_SESSION['error'] = 'กรุณากรอกนามสกุล';
-        header("location: profile_edit.php");
-    } else if (empty($email)) {
-        $_SESSION['error'] = 'กรุณากรอกอีเมล';
-        header("location: profile_edit.php");
-    } else if (strlen($_POST['tel']) < 10) {
-        $_SESSION['error'] = 'กรุณาหมายเลขโทรศัพท์ให้ถูกต้อง';
-        header("location: profile_edit.php");
-    } else if (strlen($_POST['tel']) > 10) {
-        $_SESSION['error'] = 'กรุณาหมายเลขโทรศัพท์ให้ถูกต้อง';
-        header("location: profile_edit.php");
-    } else if (empty($line_Id)) {
-        $_SESSION['error'] = 'กรุณากรอกไลน์ไอดี';
-        header("location: profile_edit.php");
-    } else if (empty($address)) {
-        $_SESSION['error'] = 'กรุณากรอกที่อยู่';
-        header("location: profile_edit.php");
-    } else {
-        try {
             if (in_array($fileActExt, $allow)) {
                 if ($m_img['size'] > 0 && $m_img['error'] == 0) {
                     if (move_uploaded_file($m_img['tmp_name'], $filePath)) {
@@ -100,9 +76,6 @@ if (isset($_POST['btn_update'])) {
                 } else {
                     echo "<script>alert('มีบางอย่างผิดพลาด')</script>";
                 }
-            }
-        } catch (PDOException $e) {
-            echo $e->getMessage();
-        }
+    
     }
 }

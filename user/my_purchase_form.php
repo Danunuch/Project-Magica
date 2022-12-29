@@ -12,7 +12,7 @@ if (isset($_SESSION['user_login'])) {
 }
 
 $order = $conn->prepare("SELECT * FROM orders WHERE email = :email");
-$order->bindParam(":email",$row["email"]);
+$order->bindParam(":email", $row["email"]);
 $order->execute();
 $row_order = $order->fetchAll();
 
@@ -88,6 +88,7 @@ $row_order = $order->fetchAll();
                         <span>เลขพัสดุ : <?= $row_order["parcel_code"] ?></span>
                         <span>รูปแบบการชำระเงิน : <?= $row_order["payment_method"] ?></span>
                         <span>จัดส่งโดย : <?= $row_order["shipping_company"] ?></span>
+                        <span>ที่อยู่จัดส่ง : <?= $row_order["address"] ?></span>
                         <span>สถานะคำสั่งซื้อ : <?php
                                                 if ($row_order["status_order"] == 1) {
                                                     echo "<span class='txt-status1-order-mypur'>รออนุมัติคำสั่งซื้อ</span>";
@@ -95,6 +96,7 @@ $row_order = $order->fetchAll();
                                                     echo "<span class='txt-status2-order-mypur'>อนุมัติคำสั่งซื้อแล้ว</span>";
                                                 }
                                                 ?> </span>
+                       
                     </div>
                     <div class="btn-detail-mypur">
                         <!-- <button class="btn-sumorder-mypur" type="button" data-bs-toggle="modal" data-bs-target="#sum-order-mypur">สรุปคำสั่งซื้อ</button> -->

@@ -12,9 +12,9 @@ if (!isset($_SESSION)) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAGICA</title>
-    <link rel="shortcut icon" href="../magica/asset/img/icon-web.ico">
+    <link rel="shortcut icon" href="asset/img/icon-web.ico">
    
-    <link rel="stylesheet" href="../magica/asset/css/web_tablet_style.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="asset/css/web_tablet_style.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
@@ -32,7 +32,7 @@ if (!isset($_SESSION)) {
     <header class="container-fluid" id="navbar">
         <nav class="navbar-container container-fluid">
             <a href="/magica" class="home-link">
-                <img class="img-logo" src="/magica/asset/img/LogoMGC.png" alt="MGC">
+                <img class="img-logo" src="asset/img/LogoMGC.png" alt="MGC">
 
             </a>
             <div class="container s-search">
@@ -75,5 +75,5 @@ if (!isset($_SESSION)) {
 
     </header>
 </body>
-<script src="/magica/action.js"></script>
+<script src="action.js"></script>
 </html>
